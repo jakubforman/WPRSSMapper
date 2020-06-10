@@ -1,0 +1,33 @@
+{
+  "name": "jay-jay666/wp-rss-mapper",
+  "description": "JayJay666/WPRSSMapper is an XML mapper for migrating from any CMS/Website to WordPress.",
+  "keywords": [
+    "WP",
+    "WordPress",
+    "RSS",
+    "WXR",
+    "WordPress Extended RSS",
+    "Mapper",
+    "Any CMS to WordPress"
+  ],
+  "type": "library",
+  "homepage": "https://jakubforman.eu/wprssmapper/",
+  "license": "MIT",
+  "require": {
+    "php": "^7.1",
+    "sabre/xml": "^2.2"
+  },
+  "authors": [
+    {
+      "name": "Jakub Josef Forman",
+      "email": "dev@jakubforman.com",
+      "homepage": "https://jakubforman.eu/",
+      "role": "Developer"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "JayJay666\\WPRSSMapper\\": "lib/"
+    }
+  }
+}
