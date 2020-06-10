@@ -24,15 +24,15 @@ define("wpLink", "http://wordpress.org/export/1.2/");
 define("dcLink", "http://purl.org/dc/elements/1.1/");
 
 /**
- * Class Exporter
+ * Class WPRSSMapper
  *
- * WordPress RSS Mapper
+ * WordPress RSS Mapper - WXR
  * Can export every website to WordPress RSS theme for import
  *
  * @author JayJay666
  * @package JayJay666\WPRSSMapper
  */
-class Exporter
+class WPRSSMapper
 {
     private $filename = null;
     private $pageName = null;

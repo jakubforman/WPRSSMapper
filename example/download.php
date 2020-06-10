@@ -14,7 +14,7 @@ ini_set("display_errors", 'on');
 
 // Class
 include_once __DIR__ . "/../vendor/autoload.php";
-$exporter = new \JayJay666\WPRSSMapper\Exporter();
+$exporter = new \JayJay666\WPRSSMapper\WPRSSMapper();
 
 //
 // DEMO of mapping
