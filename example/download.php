@@ -25,16 +25,13 @@ $chanel = new Chanel();
 $chanel->title = 'Example website';
 $chanel->link = 'http://ex.example.com';
 $chanel->description = 'Další web používající WordPress';
-$chanel->pubDate = 'Sun, 07 Jun 2020 09:34:25 +0000';
 $chanel->language = 'cs';
-$chanel->wxr_version = '1.2';
 $chanel->base_site_url = 'https://lern.jakubforman.eu';
 $chanel->base_blog_url = 'https://lern.jakubforman.eu';
 $exporter->setChanel($chanel);
 
 // START AUTHORS
 $author = new Author();
-$author->author_id = "1";
 $author->author_login = "JohnDoe";
 $author->author_email = "john.doe@example.com";
 $author->author_display_name = "John Doe";
@@ -45,7 +42,7 @@ $exporter->addAuthor($author);
 
 // START CATEGORIES
 $category = new Category();
-$category->term_id = "1";
+$category->term_id = 1;
 $category->category_nicename = "my-category";
 $category->category_parent = "";
 $category->cat_name = "My category";
@@ -59,7 +56,7 @@ $term->term_name = "My category";
 $exporter->addTerm($term);*/
 
 $category2 = new Category();
-$category2->term_id = "2";
+$category2->term_id = 2;
 $category2->category_nicename = "zarazena-rubrika";
 $category2->category_parent = "my-category";
 $category2->cat_name = "Zařazená rubrika";
@@ -113,7 +110,6 @@ $item->post_date = "2020-04-16 14:02:53";
 $item->post_date_gmt = "2020-04-16 12:02:53";
 $item->comment_status = "open";
 $item->ping_status = "closed";
-$item->post_name = "vintage-logo-png";
 $item->status = "inherit";
 $item->post_parent = "0";
 $item->menu_order = "0";
@@ -158,4 +154,4 @@ $exporter->addItem($item);
 // END ITEMS
 
 // download XML
-$exporter->download();
+$exporter->view();
